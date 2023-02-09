@@ -1,0 +1,14 @@
+.container {
+    position: relative;
+    margin-top: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: #111;
+}
