@@ -9,9 +9,13 @@ function Home() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const displayCities = searchString ? filteredCities : cities;
+
   const handleClick = (location, city) => {
     dispatch(fetchAirPollution(location));
-    navigate(`/${city.name}`);
+    console.log(location);
+    setTimeout(() => {
+      navigate(`/${city.name}`);
+    }, 500);
   };
   return (
     <Container>

@@ -34,10 +34,10 @@ export const counterSlice = createSlice({
   reducers: {
     searchCity: (state, action) => {
       const filteredCities = state.cities.filter((city) => {
-        return city.name.toLowerCase().includes(action.payload.toLowerCase());
+        return city.name.toLowerCase().includes(action.payload);
       });
       state.filteredCities = filteredCities;
-      state.searchString = action.payload.toLowerCase;
+      state.searchString = action.payload;
     },
   },
   extraReducers: {
