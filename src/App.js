@@ -1,24 +1,27 @@
-
-import './App.css';
-
+import { Outlet, Routes, Route } from "react-router-dom";
+import { Home, Details } from "./pages";
+import { useEffect } from "react";
+import { fetchCities } from "./slices/citiesSlice";
+import { useDispatch } from "react-redux";
+const Layout = () => (
+  <>
+    <Outlet />
+  </>
+);
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchCities());
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-   
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/:slug" element={<Details />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
