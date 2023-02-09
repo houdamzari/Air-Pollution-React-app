@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { Grid, Container, SingleCity, Search } from "../components";
 import { useNavigate } from "react-router-dom";
-import { fetchAirPollution } from "../slices/aitpolutionSlice";
+import { fetchAirPollution } from "../slices/airpolutionSlice";
 function Home() {
   const { cities, filteredCities, searchString } = useSelector(
     (state) => state.cities
