@@ -7,7 +7,7 @@ function Search() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(searchCity(""));
-  }, []);
+  }, [dispatch]);
   return (
     <div className="search">
       <input

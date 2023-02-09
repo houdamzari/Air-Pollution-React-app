@@ -1,14 +1,14 @@
 .pill {
-    background-color: brown;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all .4s;
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
 .pill:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }

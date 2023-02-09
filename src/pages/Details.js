@@ -7,7 +7,7 @@ function Details() {
   useEffect(() => {
     const keys = Object.keys(polutionData);
     setKeys(keys);
-  }, []);
+  }, [polutionData]);
   return (
     <Container>
       <Back />
