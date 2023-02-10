@@ -3,7 +3,7 @@ import axios from "axios";
 export const fetchAirPollution = createAsyncThunk(
   "airPollution/fetchData",
   async (location, { rejectWithValue }) => {
-    const API_KEY = "42fec1b8283dcc0ac3af9ef98f341dc7";
+    const API_KEY = "c0f8476fee975d5faaf52fdebb33284c";
     const { lat, lon } = location;
     try {
       const response = await axios.get(
