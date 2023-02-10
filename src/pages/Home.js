@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { Grid, Container, SingleCity, Search } from "../components";
 import { useNavigate } from "react-router-dom";
-import { fetchAirPollution } from "../slices/airPolutionSlice";
+import { fetchAirPollution } from "../redux/slices/airPolutionSlice";
 function Home() {
   const { cities, filteredCities, searchString } = useSelector(
     (state) => state.cities
@@ -12,7 +12,6 @@ function Home() {
 
   const handleClick = (location, city) => {
     dispatch(fetchAirPollution(location));
-    console.log(location);
     setTimeout(() => {
       navigate(`/${city.name}`);
     }, 500);
@@ -20,6 +19,7 @@ function Home() {
   return (
     <Container>
       <Search />
+      <h2>Moroccan cities</h2>
       <Grid>
         {displayCities.map((city) => (
           <SingleCity

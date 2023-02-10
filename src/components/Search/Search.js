@@ -2,7 +2,8 @@ import "./Search.css";
 import { useEffect } from "react";
 import search from "../../assets/search.svg";
 import { useDispatch } from "react-redux";
-import { searchCity } from "../../slices/citiesSlice";
+import { searchCity } from "../../redux/slices/citiesSlice";
+
 function Search() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -11,11 +12,12 @@ function Search() {
   return (
     <div className="search">
       <input
+        data-testid="search-input"
         className="search-input"
         onChange={(e) => dispatch(searchCity(e.target.value))}
         type="text"
       />
-      <img src={search} alt="icon" />
+      <img data-testid="search-icon" src={search} alt="icon" />
     </div>
   );
 }

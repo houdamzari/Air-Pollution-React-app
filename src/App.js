@@ -1,7 +1,7 @@
 import { Outlet, Routes, Route } from "react-router-dom";
 import { Home, Details } from "./pages";
 import { useEffect } from "react";
-import { fetchCities } from "./slices/citiesSlice";
+import { fetchCities } from "./redux/slices/citiesSlice";
 import { useDispatch } from "react-redux";
 const Layout = () => (
   <>
