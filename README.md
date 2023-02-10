@@ -60,7 +60,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://air-pollution-react-dvqgra55p-houdamzari.vercel.app/" target="_blank">Live Demo Link</a>
+- <a href="https://air-pollution-react-app.vercel.app/" target="_blank">Live Demo Link</a>
 
 ### Prerequisites
 
