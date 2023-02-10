@@ -3,8 +3,10 @@ import { Home, Details } from "./pages";
 import { useEffect } from "react";
 import { fetchCities } from "./redux/slices/citiesSlice";
 import { useDispatch } from "react-redux";
+import NavBar from "./components/Navbar/NavBar";
 const Layout = () => (
   <>
+    <NavBar />
     <Outlet />
   </>
 );

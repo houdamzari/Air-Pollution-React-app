@@ -1,5 +1,5 @@
 .back-button {
-  background: brown;
+  background: #fc5193;
   padding: 10px 20px;
   color: white;
   font-size: 30px;
@@ -7,4 +7,9 @@
   border-radius: 10px;
   outline: none;
   cursor: pointer;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: left;
 }

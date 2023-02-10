@@ -3,9 +3,11 @@ import { useNavigate } from "react-router-dom";
 function Back() {
   const navigate = useNavigate();
   return (
-    <button className="back-button" onClick={() => navigate(-1)}>
-      Back
-    </button>
+    <div className="btn-container">
+      <button className="back-button" onClick={() => navigate(-1)}>
+        Back
+      </button>
+    </div>
   );
 }
 

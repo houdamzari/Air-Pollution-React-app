@@ -19,7 +19,9 @@ function Home() {
   return (
     <Container>
       <Search />
-      <h2>Moroccan cities</h2>
+      <div className="heading">
+        <h2>STATS BY CITY</h2>
+      </div>
       <Grid>
         {displayCities.map((city) => (
           <SingleCity
