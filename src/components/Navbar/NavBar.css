@@ -1,0 +1,14 @@
+.nav {
+  width: 100%;
+  background-color: #fc5193;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav-icon {
+  width: 30px;
+  fill: white;
+}

@@ -56,10 +56,12 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### 🔭 Future Features <a name="future-features"></a>
+<!-- LIVE DEMO -->
 
-- [ ] ***
-- [ ] ***
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- <a href="https://air-pollution-react-app.vercel.app/" target="_blank">Live Demo Link</a>
+- <a href="https://www.loom.com/share/5744a4a789284e608251c5a0bd18cbd9" target="_blank">Video Link</a>
 
 ### Prerequisites
 

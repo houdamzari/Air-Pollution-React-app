@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  margin-top: 10px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+}
