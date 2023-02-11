@@ -1,7 +1,9 @@
 import "./SingleCity.css";
-function SingleCity({ children, handleClick }) {
+import map from "../../assets/map.png";
+function SingleCity({ children, handleClick, image }) {
   return (
     <div className="pill" onClick={handleClick}>
+      {image && <img src={map} alt="map" className="map-picture" />}
       {children}
     </div>
   );

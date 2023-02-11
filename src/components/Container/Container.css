@@ -6,8 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 90px;
+  gap: 40px;
   width: 100%;
-  padding: 50px;
+  padding: 10px;
   border-radius: 30px;
 }

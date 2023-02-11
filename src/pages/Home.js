@@ -28,6 +28,7 @@ function Home() {
             handleClick={() =>
               handleClick({ lat: city.latitude, lon: city.longitude }, city)
             }
+            image
             key={city.name}
           >
             <p>{"City Name: " + city.name}</p>
